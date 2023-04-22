@@ -9,4 +9,6 @@ keywords = ["vtk", "obj", "converter", "cli"]
 repository = "https://github.com/alphastrata/vtk2obj"
 
 [dependencies]
+anyhow = "1.0.70"
 clap = { version = "4.2.4", features = ["derive"] }
+nalgebra = "0.32.2"

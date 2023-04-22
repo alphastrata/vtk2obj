@@ -1,4 +1,3 @@
-//! Main controls for the CLI.
 use core::panic;
 use std::path::PathBuf;
 
@@ -8,11 +7,11 @@ use vtk2obj::Mesh;
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
 pub struct Cli {
-    /// Minimum [`std`] prints.
+    /// path to the .vtk file you want to use as input
     #[arg(short, long)]
     pub input: PathBuf,
 
-    /// Turns on [`the`] [`log`] it's verbose -- not reccommended.
+    /// path to which you want you .obj to be output to
     #[arg(short, long)]
     pub output: PathBuf,
 }
