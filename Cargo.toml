@@ -1,0 +1,12 @@
+[package]
+name = "vtk2obj"
+version = "0.1.0"
+edition = "2021"
+readme= "README.md"
+description = "vtk2obj is a CLI app that converts VTK files to OBJ files."
+license = "MIT"
+keywords = ["vtk", "obj", "converter", "cli"]
+repository = "https://github.com/alphastrata/vtk2obj"
+
+[dependencies]
+clap = { version = "4.2.4", features = ["derive"] }
